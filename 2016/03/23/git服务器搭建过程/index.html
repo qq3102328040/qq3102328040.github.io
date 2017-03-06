@@ -6,14 +6,42 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | sb的技术博客</title>
+  <title>git服务器搭建过程 | sb的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="sb的技术博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="git服务器搭建过程标签（空格分隔）： 博客 git
+
+##准备活动
+[root@iZ281j3obvpZ ~]# clear
+[root@iZ281j3obvpZ ~]# cat /etc/redhat-release
+CentOS release 6.5 (Final)
+[root@iZ281j3obvpZ ~]# git --version
+git version 1.7.1
+安装一堆东西y">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git服务器搭建过程">
+<meta property="og:url" content="http://yoursite.com/2016/03/23/git服务器搭建过程/index.html">
 <meta property="og:site_name" content="sb的技术博客">
+<meta property="og:description" content="git服务器搭建过程标签（空格分隔）： 博客 git
+
+##准备活动
+[root@iZ281j3obvpZ ~]# clear
+[root@iZ281j3obvpZ ~]# cat /etc/redhat-release
+CentOS release 6.5 (Final)
+[root@iZ281j3obvpZ ~]# git --version
+git version 1.7.1
+安装一堆东西y">
+<meta property="og:updated_time" content="2017-03-06T17:37:57.626Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sb的技术博客">
+<meta name="twitter:title" content="git服务器搭建过程">
+<meta name="twitter:description" content="git服务器搭建过程标签（空格分隔）： 博客 git
+
+##准备活动
+[root@iZ281j3obvpZ ~]# clear
+[root@iZ281j3obvpZ ~]# cat /etc/redhat-release
+CentOS release 6.5 (Final)
+[root@iZ281j3obvpZ ~]# git --version
+git version 1.7.1
+安装一堆东西y">
   
     <link rel="alternative" href="/atom.xml" title="sb的技术博客" type="application/atom+xml">
   
@@ -131,76 +159,239 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-git服务器搭建过程" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/06/2017-3-6 215800/" class="archive-article-date">
-  	<time datetime="2017-03-06T13:57:56.362Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/06/2017-3-6 215800/">github + hexo搭建博客 （由typecho迁移）</a>
+    <h1 class="article-title" itemprop="name">
+      git服务器搭建过程
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/04/2017-3-4 164044/" class="archive-article-date">
-  	<time datetime="2017-03-04T08:40:40.120Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-04</time>
+        
+        <a href="/2016/03/23/git服务器搭建过程/" class="archive-article-date">
+  	<time datetime="2016-03-23T04:43:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-23</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/04/2017-3-4 164044/">校园网加速+看看墙外面的世界 最终解决方案</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="git服务器搭建过程"><a href="#git服务器搭建过程" class="headerlink" title="git服务器搭建过程"></a>git服务器搭建过程</h1><p>标签（空格分隔）： 博客 git</p>
+<hr>
+<p>##准备活动</p>
+<pre><code>[root@iZ281j3obvpZ ~]# clear
+[root@iZ281j3obvpZ ~]# cat /etc/redhat-release
+CentOS release 6.5 (Final)
+[root@iZ281j3obvpZ ~]# git --version
+git version 1.7.1
+</code></pre><h3 id="安装一堆东西"><a href="#安装一堆东西" class="headerlink" title="安装一堆东西"></a>安装一堆东西</h3><pre><code>yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-devel -y
+</code></pre><p>`</p>
+<h3 id="更新下git"><a href="#更新下git" class="headerlink" title="更新下git"></a>更新下git</h3><p>先卸载</p>
+<pre><code>yum remove git -y
+</code></pre><p>下载新git</p>
+<pre><code>wget https://www.kernel.org/pub/software/scm/git/git-2.5.0.tar.gz
+[root@iZ281j3obvpZ git]# ll
+total 5300
+-rw-r--r-- 1 root root 5423853 Jul 28  2015 git-2.5.0.tar.gz
+[root@iZ281j3obvpZ git]# cd git-2.5.0
+[root@iZ281j3obvpZ git]# ./configure --prefix=/usr/local/git
+[root@iZ281j3obvpZ git]# make &amp;&amp; make install # 安装时间很长
+[root@iZ281j3obvpZ git-2.5.0]# ln -s /usr/local/git/bin/* /usr/bin/ #创建硬链，类似快捷方式
+[root@iZ281j3obvpZ git-2.5.0]# git --version #完成
+git version 2.5.0
+</code></pre><h2 id="Gitosis配置"><a href="#Gitosis配置" class="headerlink" title="Gitosis配置"></a>Gitosis配置</h2><h3 id="Gitosis安装"><a href="#Gitosis安装" class="headerlink" title="Gitosis安装"></a>Gitosis安装</h3><p>要用到  <code>python-setuptools</code> </p>
+<pre><code>[root@iZ281j3obvpZ git-2.5.0]# yum install python python-setuptools
+[root@iZ281j3obvpZ git-2.5.0]# cd ..
+[root@iZ281j3obvpZ git-2.5.0]# git clone git://github.com/res0nat0r/gitosis.git
+[root@iZ281j3obvpZ git-2.5.0]# cd gitosis/
+[root@iZ281j3obvpZ gitosis]# ll
+total 68
+-rw-r--r-- 1 root root 17987 Mar  5 10:45 COPYING
+drwxr-xr-x 2 root root  4096 Mar  5 10:45 debian
+-rw-r--r-- 1 root root   236 Mar  5 10:45 etc-event.d-local-git-daemon
+-rw-r--r-- 1 root root  1854 Mar  5 10:45 example.conf
+drwxr-xr-x 4 root root  4096 Mar  5 10:45 gitosis
+-rw-r--r-- 1 root root  1265 Mar  5 10:45 gitweb.conf
+-rw-r--r-- 1 root root   498 Mar  5 10:45 lighttpd-gitweb.conf
+-rw-r--r-- 1 root root   180 Mar  5 10:45 MANIFEST.in
+-rw-r--r-- 1 root root   597 Mar  5 10:45 mirror.conf
+-rw-r--r-- 1 root root  6954 Mar  5 10:45 README.rst
+-rwxr-xr-x 1 root root  2169 Mar  5 10:45 setup.py
+-rw-r--r-- 1 root root  2055 Mar  5 10:45 TODO.rst
+[root@iZ281j3obvpZ git-2.5.0]# python setup.py install #安装完成
+</code></pre><h3 id="本地公钥管理"><a href="#本地公钥管理" class="headerlink" title="本地公钥管理"></a>本地公钥管理</h3><pre><code>sb@SB-PC /D/sb_alidata/git #一路回车
+$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/sb/.ssh/id_rsa):
+/c/Users/sb/.ssh/id_rsa already exists.
+Overwrite (y/n)?
+</code></pre><p>弄了半天，以为出问题了，然后把原来的覆盖了也不行，结果检查了一下，路径打错了</p>
+<pre><code>sb@SB-PC /D/sb_alidata/git
+$ scp ~/.ssh/id_rsa.pub root@121.42.11.119:~
+root@121.42.11.119&apos;s password:
+id_rsa.pub                                    100%  390     0.4KB/s   00:00
+</code></pre><p>在服务器上查看刚才上传的文件</p>
+<pre><code>[root@iZ281j3obvpZ git]# ls ~
+ftp  git  id_rsa.pub  tb_userspace  web_environment
+[root@iZ281j3obvpZ git]# mv ~/id_rsa.pub ~/git
+[root@iZ281j3obvpZ git]# ll
+total 5344
+drwxrwxr-x 21 root root   32768 Mar  5 10:39 git-2.5.0
+-rw-r--r--  1 root root 5423853 Jul 28  2015 git-2.5.0.tar.gz
+drwxr-xr-x  8 root root    4096 Mar  5 10:47 gitosis
+-rw-r--r--  1 root root     390 Mar  5 11:07 id_rsa.pub
+</code></pre><p>###Gitosis初始化<br>服务器上生成git用户，使用git用户并初始化gitosis<br>创建git版本管理用户 git</p>
+<p>在服务器上为git创建一个账户</p>
+<pre><code>[root@iZ281j3obvpZ git]# useradd -c &quot;git version manager&quot; -m -d /home/git -s /bin/bash git
+[root@iZ281j3obvpZ git]# passwd git
+</code></pre><p>初始化gitosis</p>
+<pre><code>[root@iZ281j3obvpZ git]# mv id_rsa.pub /home/git/
+[root@iZ281j3obvpZ git]# su git
+[git@iZ281j3obvpZ git]$ gitosis-init &lt; ~/id_rsa.pub
 
-        <div class="article-info info-on-right">
-          
-          
+[git@iZ281j3obvpZ git]$ chmod 755 /home/git/repositories/gitosis-admin.git/hooks/post-update  #添加权限
+</code></pre><p>服务器配置完成</p>
+<p>##git项目管理<br>转到客户端</p>
+<pre><code>sb@SB-PC /D/sb_alidata/git
+$ mkdir ~/gitrepo
+sb@SB-PC ~``
+$ cd gitrepo
+sb@SB-PC ~/gitrepo
+$ git clone git@121.42.xxx.xxx:gitosis-admin.git #克隆项目管理仓库
+Cloning into &apos;gitosis-admin&apos;...
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 5 (delta 0)
+Receiving objects: 100% (5/5), done.
+Checking connectivity... done.
+</code></pre><p>然后工作目录里已经出现gitosis-admin.git项目文件夹了</p>
+<p>###新建项目</p>
+<pre><code>$cd ~/gitrepo/gitosis-admin
+$vim gitosis.conf
+[group test]            # 具有写权限的组名称
+writable = test         # 该组可写的项目名称
+members = liuyan@liuyan-pc #有写权限的组成员
+</code></pre><p>提交到服务器</p>
+<pre><code>$git add .
+$git commit -a -m &quot;add test repo&quot;
+$git push
+</code></pre><p>创建新项目</p>
+<pre><code>$cd ~/repo 
+$mkdir test   
+$cd test   #对于新的项目，需要先在本地初始化为 Git 项目，添加要管理的文件并作首次提交
+$git init 
+$touch readme
+</code></pre><p>提交到远程服务器</p>
+<pre><code>$git add .
+$git commit -a -m &quot;init test&quot;
+$git remote add origin git@121.42.xxx.xxx:test.git
+$git push origin master
+</code></pre><p>服务器上查看</p>
+<pre><code>[git@hadoop-slave repositories]$ ls
+gitosis-admin.git  test.git
+</code></pre><p>关于多个成员因为暂时用不到，就不写了，可以参考这位大牛的博客<br><a href="http://yanliu.org/2015/08/20/Centos-6-4%E6%90%AD%E5%BB%BAgit%E6%9C%8D%E5%8A%A1%E5%99%A8/" target="_blank" rel="external">yanliu.org</a><br>我搭的这次基本上是照着这个博客上搭的。</p>
 
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/03/23/git服务器搭建过程/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/04/01/记录下使用finalspeed提速/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          记录下使用finalspeed提速
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2016/03/19/lamp配置和安装owncloud/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">lamp配置和安装owncloud</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-    
+
 
 
           </div>
@@ -223,8 +414,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

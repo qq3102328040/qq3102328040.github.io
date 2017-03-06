@@ -6,14 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | sb的技术博客</title>
+  <title>github + hexo搭建博客 （由typecho迁移） | sb的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="sb的技术博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="千辛万苦把梯子放docker上，想放博客的时候看了下内存，貌似要gg，人穷，就放github上吧。
+安装hexo本地安装node.js还是避免不了，装吧。。有点牛逼的是hexo和node的网站全上ipv6了，屌的不行https://hexo.io/zh-cn/docs/index.htmlhttps://nodejs.org/en/
+12345678$ cd d:/hexo$ npm instal">
+<meta property="og:type" content="article">
+<meta property="og:title" content="github + hexo搭建博客 （由typecho迁移）">
+<meta property="og:url" content="http://yoursite.com/2017/03/06/2017-3-6 215800/index.html">
 <meta property="og:site_name" content="sb的技术博客">
+<meta property="og:description" content="千辛万苦把梯子放docker上，想放博客的时候看了下内存，貌似要gg，人穷，就放github上吧。
+安装hexo本地安装node.js还是避免不了，装吧。。有点牛逼的是hexo和node的网站全上ipv6了，屌的不行https://hexo.io/zh-cn/docs/index.htmlhttps://nodejs.org/en/
+12345678$ cd d:/hexo$ npm instal">
+<meta property="og:updated_time" content="2017-03-06T17:56:13.497Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sb的技术博客">
+<meta name="twitter:title" content="github + hexo搭建博客 （由typecho迁移）">
+<meta name="twitter:description" content="千辛万苦把梯子放docker上，想放博客的时候看了下内存，貌似要gg，人穷，就放github上吧。
+安装hexo本地安装node.js还是避免不了，装吧。。有点牛逼的是hexo和node的网站全上ipv6了，屌的不行https://hexo.io/zh-cn/docs/index.htmlhttps://nodejs.org/en/
+12345678$ cd d:/hexo$ npm instal">
   
     <link rel="alternative" href="/atom.xml" title="sb的技术博客" type="application/atom+xml">
   
@@ -131,76 +141,126 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-2017-3-6 215800" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      github + hexo搭建博客 （由typecho迁移）
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/06/2017-3-6 215800/" class="archive-article-date">
+
+        
+        <a href="/2017/03/06/2017-3-6 215800/" class="archive-article-date">
   	<time datetime="2017-03-06T13:57:56.362Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-06</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/06/2017-3-6 215800/">github + hexo搭建博客 （由typecho迁移）</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>千辛万苦把梯子放docker上，想放博客的时候看了下内存，貌似要gg，人穷，就放github上吧。</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>本地安装node.js还是避免不了，装吧。。<br>有点牛逼的是hexo和node的网站全上ipv6了，屌的不行<br><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">https://hexo.io/zh-cn/docs/index.html</a><br><a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ cd d:/hexo</div><div class="line">$ npm install hexo-cli -g</div><div class="line">$ hexo init blog</div><div class="line">$ cd blog</div><div class="line">$ npm install</div><div class="line">$ hexo g # 或者hexo generate</div><div class="line">$ hexo s # 或者hexo server，可以在http://localhost:4000/ 查看</div><div class="line"># 发现打不开，查了网上很多win10也有这种情况，试了半天，地址使用127.0.0.1:4444解决</div></pre></td></tr></table></figure>
+<p>更改_config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:qq3102328040/qq3102328040.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>在github上创建qq3102328040.github.io项目<br>使用命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
+<p>即可部署</p>
+<p>刚才发现自己的godaddy账号被封了，有时间找客服说下，暂时是上不了域名了。</p>
+<p>一开始还想直接把typecho迁移过来着，然后发现静态的页面没办法加密，自己写的记事啥的也不想发出去，所以就把他专门当做技术博客吧，不用迁移了，把技术方面的东西简单的复制一下。</p>
+<hr>
+<p>复制完了，快两点了，看了一些以前的博客，断断续续的，不过好记性不如烂笔头这句话确实不假，好多东西记下了就记下了，没记下就忘掉了。看着自己上学期确实没有大二下努力。怎么说，找回自己，继续努力吧。还有，一定得想个办法设置下密码啥的。。。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/06/2017-3-6 215800/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/04/2017-3-4 164044/" class="archive-article-date">
-  	<time datetime="2017-03-04T08:40:40.120Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-04</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/04/2017-3-4 164044/">校园网加速+看看墙外面的世界 最终解决方案</a>
-    </h1>
+  
+    <a href="/2017/03/04/2017-3-4 164044/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">校园网加速+看看墙外面的世界 最终解决方案</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -223,8 +283,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
